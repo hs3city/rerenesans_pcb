@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "ICU_festiwal")(type "KiCad")(uri "${KIPRJMOD}/Others/Libraries/ICU_festiwal.kicad_sym")(options "")(descr ""))
+)

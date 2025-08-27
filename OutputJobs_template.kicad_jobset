@@ -1,0 +1,478 @@
+{
+  "jobs": [
+    {
+      "description": "",
+      "id": "e141c44f-86e9-47c4-a012-628d87855905",
+      "settings": {
+        "description": "",
+        "fail_on_error": false,
+        "format": "report",
+        "output_filename": "${PROJECTNAME}_V${REVISION}_${CURRENT_DATE}_ERC_Report",
+        "severity": 48,
+        "units": "mm"
+      },
+      "type": "sch_erc"
+    },
+    {
+      "description": "",
+      "id": "14f4317b-6805-48df-830a-7f8310cee0a0",
+      "settings": {
+        "black_and_white": false,
+        "color_theme": "KiCad Classic",
+        "description": "",
+        "drawing_sheet": "",
+        "format": "pdf",
+        "hpgl_page_size": "default",
+        "hpgl_pen_size": 1.016,
+        "hpgl_plot_origin": "A3",
+        "min_pen_width": 847,
+        "output_filename": "${PROJECTNAME}_V${REVISION}_${CURRENT_DATE}_Schematic",
+        "page_size": "auto",
+        "pdf_hierarchical_links": true,
+        "pdf_metadata": true,
+        "pdf_property_popups": true,
+        "plot_all": true,
+        "plot_drawing_sheet": true,
+        "use_background_color": true
+      },
+      "type": "sch_export_plot_pdf"
+    },
+    {
+      "description": "",
+      "id": "b8c3d36c-7627-46d4-8ef3-2a1c9d996dae",
+      "settings": {
+        "bom_format_preset_name": "",
+        "bom_preset_name": "",
+        "description": "",
+        "exclude_dnp": false,
+        "field_delimiter": "",
+        "fields_group_by": [
+          "Reference",
+          "Value",
+          "Footprint",
+          "Description",
+          "$(MPN)"
+        ],
+        "fields_labels": [
+          "Oznaczenie",
+          "Wartość",
+          "Footprint",
+          "Dokumentacja",
+          "Opis",
+          "Liczba",
+          "#",
+          "MPN"
+        ],
+        "fields_ordered": [
+          "Reference",
+          "Value",
+          "Footprint",
+          "__Datasheet",
+          "Description",
+          "${QUANTITY}",
+          "${ITEM_NUMBER}",
+          "__$(MPN)"
+        ],
+        "filter_string": "",
+        "include_excluded_from_bom": false,
+        "keep_line_breaks": false,
+        "keep_tabs": false,
+        "output_filename": "$(PROJECTNAME)_V$(REVISION)_$(CURRENT_DATE)_BoM",
+        "ref_delimiter": "",
+        "ref_range_delimiter": "",
+        "sort_asc": true,
+        "sort_field": "Reference",
+        "string_delimiter": ""
+      },
+      "type": "sch_export_bom"
+    },
+    {
+      "description": "",
+      "id": "1a190be3-1a15-4e6d-9ce0-5e7324bcb74a",
+      "settings": {
+        "description": "",
+        "fail_on_error": false,
+        "format": "report",
+        "output_filename": "${PROJECTNAME}_V${REVISION}_${CURRENT_DATE}_DRC_Report",
+        "parity": true,
+        "report_all_track_errors": false,
+        "severity": 48,
+        "units": "mm"
+      },
+      "type": "pcb_drc"
+    },
+    {
+      "description": "",
+      "id": "3e9a7f6a-558b-4a40-9046-ee81d389a8c7",
+      "settings": {
+        "description": "",
+        "disable_aperture_macros": false,
+        "drawing_sheet": "",
+        "include_netlist_attributes": true,
+        "layers": [
+          "F.Cu",
+          "In1.Cu",
+          "In2.Cu",
+          "In3.Cu",
+          "In4.Cu",
+          "In5.Cu",
+          "In6.Cu",
+          "In7.Cu",
+          "In8.Cu",
+          "In9.Cu",
+          "In10.Cu",
+          "In11.Cu",
+          "In12.Cu",
+          "In13.Cu",
+          "In14.Cu",
+          "In15.Cu",
+          "In16.Cu",
+          "In17.Cu",
+          "In18.Cu",
+          "In19.Cu",
+          "In20.Cu",
+          "In21.Cu",
+          "In22.Cu",
+          "In23.Cu",
+          "In24.Cu",
+          "In25.Cu",
+          "In26.Cu",
+          "In27.Cu",
+          "In28.Cu",
+          "In29.Cu",
+          "In30.Cu",
+          "B.Cu",
+          "F.Paste",
+          "B.Paste",
+          "F.SilkS",
+          "B.SilkS",
+          "F.Mask",
+          "B.Mask",
+          "Dwgs.User",
+          "Cmts.User",
+          "Eco1.User",
+          "Eco2.User",
+          "Edge.Cuts",
+          "Margin",
+          "F.CrtYd",
+          "B.CrtYd",
+          "F.Fab",
+          "B.Fab",
+          "User.1",
+          "User.2",
+          "User.3"
+        ],
+        "layers_include_on_all": [],
+        "layers_include_on_all_set": false,
+        "layers_to_include_on_all_layers": [
+          "Edge.Cuts"
+        ],
+        "output_filename": "",
+        "plot_drawing_sheet": true,
+        "plot_footprint_values": true,
+        "plot_invisible_text": false,
+        "plot_pad_numbers": false,
+        "plot_ref_des": true,
+        "precision": 5,
+        "subtract_solder_mask_from_silk": false,
+        "use_drill_origin": true,
+        "use_protel_file_extension": true,
+        "use_x2_format": true
+      },
+      "type": "pcb_export_gerbers"
+    },
+    {
+      "description": "",
+      "id": "6d401339-bc5d-409d-bb2d-f01fc4351840",
+      "settings": {
+        "description": "",
+        "drill_origin": "plot",
+        "excellon.combine_pth_npth": true,
+        "excellon.minimal_header": false,
+        "excellon.mirror_y": false,
+        "excellon.oval_drill_route": false,
+        "format": "gerber",
+        "generate_map": false,
+        "gerber_precision": 5,
+        "map_format": "gerberx2",
+        "output_dir": "",
+        "units": "in",
+        "zero_format": "decimal"
+      },
+      "type": "pcb_export_drill"
+    },
+    {
+      "description": "",
+      "id": "a24a7e6c-3b64-4b78-9167-b444dc724e54",
+      "settings": {
+        "description": "",
+        "exclude_dnp": true,
+        "exclude_footprints_with_th": false,
+        "format": "ascii",
+        "gerber_board_edge": true,
+        "negate_bottom_x": false,
+        "output_filename": "${PROJECTNAME}_V${REVISION}_${CURRENT_DATE}_Pick&Place",
+        "side": "both",
+        "single_file": true,
+        "smd_only": false,
+        "units": "mm",
+        "use_drill_place_file_origin": true
+      },
+      "type": "pcb_export_pos"
+    },
+    {
+      "description": "",
+      "id": "094931e8-45ed-456d-ac5c-ecccabfca10b",
+      "settings": {
+        "back_fp_property_popups": true,
+        "black_and_white": false,
+        "color_theme": "",
+        "description": "",
+        "drawing_sheet": "",
+        "drill_shape": "full",
+        "front_fp_property_popups": true,
+        "layers": [
+          "In3.Cu",
+          "In4.Cu",
+          "In5.Cu",
+          "In6.Cu",
+          "In7.Cu",
+          "In8.Cu",
+          "In9.Cu",
+          "In10.Cu",
+          "In11.Cu",
+          "In12.Cu",
+          "In13.Cu",
+          "In14.Cu",
+          "In15.Cu",
+          "In16.Cu",
+          "In17.Cu",
+          "In18.Cu",
+          "In19.Cu",
+          "In20.Cu",
+          "In21.Cu",
+          "In22.Cu",
+          "In23.Cu",
+          "In24.Cu",
+          "In25.Cu",
+          "In26.Cu",
+          "In27.Cu",
+          "In28.Cu",
+          "In29.Cu",
+          "In30.Cu",
+          "F.Fab",
+          "B.Fab",
+          "User.3"
+        ],
+        "layers_to_include_on_all_layers": [
+          "Edge.Cuts"
+        ],
+        "mirror": false,
+        "negative": false,
+        "output_filename": "./Project_outputs/Assembly",
+        "pdf_gen_mode": "all-layers-separate-files",
+        "pdf_metadata": true,
+        "plot_drawing_sheet": true,
+        "plot_footprint_values": true,
+        "plot_invisible_text": false,
+        "plot_pad_numbers": false,
+        "plot_ref_des": true,
+        "single_document": false,
+        "sketch_pads_on_fab_layers": false,
+        "use_drill_origin": false
+      },
+      "type": "pcb_export_pdf"
+    },
+    {
+      "description": "",
+      "id": "e556f182-6024-4d7a-93a9-b2a002267516",
+      "settings": {
+        "board_only": false,
+        "board_outlines_chaining_epsilon": 0.01,
+        "cut_vias_in_body": false,
+        "description": "",
+        "export_board_body": true,
+        "export_components": true,
+        "export_inner_copper": false,
+        "export_pads": false,
+        "export_silkscreen": true,
+        "export_soldermask": true,
+        "export_tracks": false,
+        "export_zones": false,
+        "fill_all_vias": false,
+        "format": "step",
+        "fuse_shapes": false,
+        "include_dnp": false,
+        "include_unspecified": true,
+        "occt_format": 0,
+        "optimize_step": true,
+        "output_filename": "${PROJECTNAME}_V${REVISION}_${CURRENT_DATE}_3D.step",
+        "overwrite": true,
+        "subst_models": true,
+        "use_drill_origin": false,
+        "use_grid_origin": false,
+        "user_origin.x": 0.0,
+        "user_origin.y": 0.0,
+        "vrml_model_dir": "",
+        "vrml_relative_paths": false
+      },
+      "type": "pcb_export_3d"
+    },
+    {
+      "description": "",
+      "id": "24915a85-5095-4325-abd4-9da4d0d0af2b",
+      "settings": {
+        "bg_style": "default",
+        "description": "",
+        "floor": false,
+        "format": "png",
+        "height": 1080,
+        "light_bottom_intensity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "light_camera_intensity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "light_side_elevation": 60,
+        "light_side_intensity": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "light_top_intensity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "output_filename": "${PROJECTNAME}_V${REVISION}_${CURRENT_DATE}_TopAssembly",
+        "pan_x": 0.0,
+        "pan_y": 0.0,
+        "pan_z": 0.0,
+        "perspective": false,
+        "pivot_x": 0.0,
+        "pivot_y": 0.0,
+        "pivot_z": 0.0,
+        "quality": "basic",
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "side": "top",
+        "width": 1920,
+        "zoom": 1.0
+      },
+      "type": "pcb_render"
+    },
+    {
+      "description": "",
+      "id": "8aeb2ba5-34c8-4d04-b50e-a1070a0eb6f3",
+      "settings": {
+        "bg_style": "default",
+        "description": "",
+        "floor": false,
+        "format": "png",
+        "height": 1080,
+        "light_bottom_intensity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "light_camera_intensity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "light_side_elevation": 60,
+        "light_side_intensity": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "light_top_intensity": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "output_filename": "${PROJECTNAME}_V${REVISION}_${CURRENT_DATE}_BottomAssembly",
+        "pan_x": 0.0,
+        "pan_y": 0.0,
+        "pan_z": 0.0,
+        "perspective": false,
+        "pivot_x": 0.0,
+        "pivot_y": 0.0,
+        "pivot_z": 0.0,
+        "quality": "basic",
+        "rotation_x": 0.0,
+        "rotation_y": 0.0,
+        "rotation_z": 0.0,
+        "side": "bottom",
+        "width": 1920,
+        "zoom": 1.0
+      },
+      "type": "pcb_render"
+    }
+  ],
+  "meta": {
+    "version": 1
+  },
+  "outputs": [
+    {
+      "description": "Project Outputs",
+      "id": "16864f9f-9a50-406e-be10-2d54dcf555fc",
+      "only": [
+        "e141c44f-86e9-47c4-a012-628d87855905",
+        "14f4317b-6805-48df-830a-7f8310cee0a0",
+        "6d401339-bc5d-409d-bb2d-f01fc4351840"
+      ],
+      "settings": {
+        "output_path": "./Project_outputs/"
+      },
+      "type": "folder"
+    },
+    {
+      "description": "Project_Outputs/Manufacturing",
+      "id": "1af19fd3-83cc-4271-bcae-fd175c458605",
+      "only": [
+        "1a190be3-1a15-4e6d-9ce0-5e7324bcb74a",
+        "3e9a7f6a-558b-4a40-9046-ee81d389a8c7",
+        "6d401339-bc5d-409d-bb2d-f01fc4351840"
+      ],
+      "settings": {
+        "output_path": "./Project_outputs/Manufacturing/"
+      },
+      "type": "folder"
+    },
+    {
+      "description": "",
+      "id": "6acd4ff3-f8e4-4076-8623-3470460fe35e",
+      "only": [
+        "1a190be3-1a15-4e6d-9ce0-5e7324bcb74a",
+        "3e9a7f6a-558b-4a40-9046-ee81d389a8c7",
+        "6d401339-bc5d-409d-bb2d-f01fc4351840"
+      ],
+      "settings": {
+        "format": "zip",
+        "output_path": "./Project_outputs/Manufacturing/Gerbers.zip"
+      },
+      "type": "archive"
+    },
+    {
+      "description": "Project_Outputs/Assembly",
+      "id": "967a8492-9e0b-46c6-a36b-41d4d85ee572",
+      "only": [
+        "a24a7e6c-3b64-4b78-9167-b444dc724e54",
+        "094931e8-45ed-456d-ac5c-ecccabfca10b",
+        "e556f182-6024-4d7a-93a9-b2a002267516",
+        "24915a85-5095-4325-abd4-9da4d0d0af2b",
+        "8aeb2ba5-34c8-4d04-b50e-a1070a0eb6f3"
+      ],
+      "settings": {
+        "output_path": "./Project_outputs/Assembly/"
+      },
+      "type": "folder"
+    }
+  ]
+}
